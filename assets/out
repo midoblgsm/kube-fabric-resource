@@ -49,7 +49,7 @@ export DO_PULL=$do_pull
 mkdir -p /root/data-marketplace-chaincode
 
 cd /root/data-marketplace-chaincode
-git pull https://github.com/lgsvl/data-marketplace-chaincode.git
+git clone https://github.com/lgsvl/data-marketplace-chaincode.git
 
 git checkout version-$BRANCH
 git pull
