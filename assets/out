@@ -46,8 +46,10 @@ export BRANCH=$branch
 do_pull="$(jq -r '.params.do_pull // ""' < "$payload")"
 export DO_PULL=$do_pull
 
+mkdir -p /root/data-marketplace-chaincode
 
 cd /root/data-marketplace-chaincode
+git pull https://github.com/lgsvl/data-marketplace-chaincode.git
 
 git checkout version-$BRANCH
 git pull
